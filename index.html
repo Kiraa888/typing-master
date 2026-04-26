@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster Pro | Dark Red Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TypeMaster <span>Pro</span></h1>
+        <a href="https://kiraa888.github.io/animesh-portfolio/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Visit My Portfolio</a>
+    </header>
+
+    <main class="game-container">
+        <div class="controls">
+            <select id="difficulty-select" class="theme-select">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <select id="time-select" class="theme-select">
+                <option value="30">30s</option>
+                <option value="60" selected>60s</option>
+                <option value="120">120s</option>
+            </select>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat"><span>Time:</span> <span id="time">60</span>s</div>
+            <div class="stat"><span>WPM:</span> <span id="wpm">0</span></div>
+            <div class="stat"><span>Accuracy:</span> <span id="accuracy">100</span>%</div>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <div class="typing-box">
+            <div id="text-display" class="text-display"></div>
+            <textarea id="type-input" class="type-input" autocomplete="off" spellcheck="false" autofocus onpaste="return false;"></textarea>
+        </div>
+
+        <button id="restart-btn" class="restart-btn">Restart System</button>
+
+        <div id="results-panel" class="results-panel hidden">
+            <h3>System Report</h3>
+            <h2 id="result-summary" class="result-summary"></h2>
+            
+            <div class="visual-heatmap">
+                <h4>Vulnerability Heatmap</h4>
+                <div id="keyboard-layout" class="keyboard">
+                    </div>
+            </div>
+            
+            <div class="leaderboard">
+                <h4>Top Operatives</h4>
+                <ul id="leaderboard-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>
