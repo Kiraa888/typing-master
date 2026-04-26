@@ -42,6 +42,10 @@ header h1 span { color: var(--accent-red); }
 
 .results-panel { margin-top: 30px; border-top: 2px solid var(--accent-red); padding-top: 20px; display: flex; flex-direction: column; gap: 20px; }
 .result-summary { text-align: center; color: var(--correct-color); text-shadow: 0 0 10px var(--correct-color); font-size: 1.8rem; margin-bottom: 10px; }
+
+/* Graph Styling */
+.chart-container { position: relative; height: 300px; width: 100%; margin-bottom: 20px; background: var(--bg-dark); padding: 15px; border-radius: 8px; border: 1px solid #3d0a0a; }
+
 .keyboard { display: flex; flex-direction: column; gap: 4px; align-items: center; margin-top: 10px; background: var(--bg-dark); padding: 15px; border-radius: 8px; border: 1px solid #3d0a0a; overflow-x: auto;}
 .kb-row { display: flex; gap: 4px; justify-content: center; width: 100%;}
 .key { width: 38px; height: 38px; border: 1px solid #6a4c4c; border-radius: 4px; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; color: #fff; transition: background-color 0.3s; flex-shrink: 0;}
@@ -58,6 +62,7 @@ header h1 span { color: var(--accent-red); }
     .typing-box { font-size: 1.1rem; padding: 15px; }
     .key { width: 30px; height: 35px; font-size: 0.8rem; }
     .spacebar { width: 150px; }
+    .chart-container { height: 250px; }
 }
 
 @media (max-width: 480px) {
