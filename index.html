@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeMaster Pro | Dark Red Edition</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,8 @@
             <select id="difficulty-select" class="theme-select">
                 <option value="easy">Easy</option>
                 <option value="medium" selected>Medium</option>
-                <option value="hard">Hard</option>
+                <option value="hard">Hard (Code)</option>
+                <option value="anime">Anime Quotes</option>
             </select>
             <select id="time-select" class="theme-select">
                 <option value="30">30s</option>
@@ -46,6 +48,10 @@
         <div id="results-panel" class="results-panel hidden">
             <h3>System Report</h3>
             <h2 id="result-summary" class="result-summary"></h2>
+            
+            <div class="chart-container">
+                <canvas id="performance-chart"></canvas>
+            </div>
             
             <div class="visual-heatmap">
                 <h4>Vulnerability Heatmap</h4>
